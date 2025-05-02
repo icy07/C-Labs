@@ -1,0 +1,4 @@
+﻿  3.cpp
+C:\Users\andre\Desktop\сиплюслпюс лабы\3\3\3.cpp(33,39): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\andre\Desktop\сиплюслпюс лабы\3\3\3.cpp(34,34): warning C4305: аргумент: усечение из "double" в "float"
+  3.vcxproj -> C:\Users\andre\Desktop\сиплюслпюс лабы\3\x64\Debug\3.exe

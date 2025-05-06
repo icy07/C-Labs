@@ -1,0 +1,79 @@
+Log started at 1746556848
+Added monster: Goblin1
+Added monster: Dragon1
+Added monster: Skeleton1
+Goblin1 takes 15 damage, HP now 35
+Hero attacks Goblin1 for 15 damage!
+Hero takes 5 damage, HP now 95
+Goblin1 takes 15 damage, HP now 20
+Hero attacks Goblin1 for 15 damage!
+Hero takes 5 damage, HP now 90
+Goblin1 takes 15 damage, HP now 5
+Hero attacks Goblin1 for 15 damage!
+Hero takes 5 damage, HP now 85
+Goblin1 has been defeated!
+Hero added Great to inventory.
+Log started at 1746556924
+Added monster: Goblin1
+Added monster: Dragon1
+Added monster: Skeleton1
+Hero added Sword to inventory.
+Goblin1 takes 15 damage, HP now 35
+Hero attacks Goblin1 for 15 damage!
+Hero takes 5 damage, HP now 95
+Goblin1 takes 15 damage, HP now 20
+Hero attacks Goblin1 for 15 damage!
+Hero takes 5 damage, HP now 90
+Goblin1 takes 15 damage, HP now 5
+Hero attacks Goblin1 for 15 damage!
+Hero takes 5 damage, HP now 85
+Goblin1 has been defeated!
+Hero gains 50 experience!
+Hero heals for 20 HP!
+Hero attacks Dragon1, but it has no effect!
+Hero takes 20 damage, HP now 80
+Hero attacks Dragon1, but it has no effect!
+Hero takes 20 damage, HP now 60
+Hero attacks Dragon1, but it has no effect!
+Hero takes 20 damage, HP now 40
+Hero attacks Dragon1, but it has no effect!
+Hero takes 20 damage, HP now 20
+Hero attacks Dragon1, but it has no effect!
+Hero takes 20 damage, HP now 0
+Hero heals for 20 HP!
+Hero heals for 20 HP!
+Hero heals for 20 HP!
+Hero heals for 20 HP!
+Hero heals for 20 HP!
+Hero heals for 20 HP!
+Hero heals for 20 HP!
+Game progress saved to game_save.txt
+Game ended.
+Log started at 1746557015
+Added monster: Goblin1
+Added monster: Dragon1
+Added monster: Skeleton1
+Loaded character: Hero
+Loaded monster: Dragon1
+Loaded monster: Skeleton1
+Game progress loaded from game_save.txt
+Game ended.
+Log started at 1746557084
+Added monster: Goblin
+Added monster: Dragon
+Added monster: Skeleton
+Loaded character: Hero
+Loaded monster: Dragon1
+Loaded monster: Skeleton1
+Game progress loaded from game_save.txt
+Game ended.
+Log started at 1746557140
+Added monster: Goblin
+Added monster: Dragon
+Added monster: Zombie
+Game ended.
+Log started at 1746557207
+Added monster: Goblin
+Added monster: Dragon
+Added monster: Zombie
+Hero added df to inventory.

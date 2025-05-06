@@ -1,0 +1,21 @@
+16
+Administrator,Kuviko Daniil Igorevich,3001,5,System Admin
+Student,Barykina Marta Dmitrievna,1001,1,GD204
+Student,Benesh Timur Dmitrievich,1002,1,GD204
+Student,Bocharova Ekaterina Sergeevna,1003,1,GD204
+Student,Vershanskiy Vladislav Nikolaevich,1004,1,GD204
+Student,Voronin Konstantin Yurievich,1005,1,GD204
+Student,Dzoblaev Alan Sergeevich,1006,1,GD204
+Student,Dundukov Nikita Alexandrovich,1007,1,GD204
+Student,Zubarev Bogdan Pavlovich,1008,1,GD204
+Student,Karanda Yaroslav Evgenievich,1009,1,GD204
+Student,Karuna Vadim Maksimovich,1010,1,GD204
+Student,Madiy Dmitriy Alexandrovich,1012,1,GD204
+Student,Semkin Dmitriy Pavlovich,1013,1,GD204
+Student,Teran Nikita Yurievich,1014,1,GD204
+Teacher,Olga Viktorovna Shostik,2001,3,Game Development
+Teacher,Maxim Vasilyevich Tashilin,2002,3,Mathematics
+3
+Classroom A,1
+Lab B,3
+Library,2

@@ -1,0 +1,5 @@
+USER Ivan 101 1 STUDENT GR-101
+USER Olga 202 3 TEACHER Physics
+USER Alexander 303 5 ADMIN IT
+RESOURCE "Physics Lab" 3
+RESOURCE "Library" 1

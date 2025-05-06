@@ -1,0 +1,10 @@
+Player
+hero
+100
+22
+2000
+Enemy
+Dragon
+500
+20
+Boss

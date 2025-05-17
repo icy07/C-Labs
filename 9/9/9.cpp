@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
@@ -79,12 +79,9 @@ public:
         iss >> count;
         items.clear();
         std::string item;
-        std::getline(iss, item); 
         for (size_t i = 0; i < count; ++i) {
-            std::getline(iss, item, ' ');
-            if (!item.empty()) {
-                items.push_back(item);
-            }
+            iss >> item;
+            items.push_back(item);
         }
     }
 };
@@ -127,10 +124,11 @@ public:
         health -= damage;
         if (health < 0) {
             health = 0;
-            logger.log(name + " has been defeated!");
-            throw std::runtime_error("Health dropped below 0 for " + name);
         }
         logger.log(name + " takes " + std::to_string(damage) + " damage, HP now " + std::to_string(health));
+        if (health == 0) {
+            logger.log(name + " has been defeated!");
+        }
     }
 
 protected:
@@ -202,10 +200,11 @@ public:
         health -= damage;
         if (health < 0) {
             health = 0;
-            logger.log(name + " has been defeated!");
-            throw std::runtime_error("Health dropped below 0 for " + name);
         }
         logger.log(name + " takes " + std::to_string(damage) + " damage, HP now " + std::to_string(health));
+        if (health == 0) {
+            logger.log(name + " has been defeated!");
+        }
     }
 
     void heal(int amount, Logger<std::string>& logger) {
@@ -318,23 +317,29 @@ public:
         }
         auto& monster = *monsters.front();
         std::cout << "\nFighting " << monster.getName() << "!\n";
-
-        try {
-            while (player.getHealth() > 0 && monster.getHealth() > 0) {
-                player.attackEnemy(monster, logger);
-                if (monster.getHealth() > 0) {
-                    player.takeDamage(monster.getAttack() - player.getDefense(), logger);
-                }
+        while (player.getHealth() > 0 && monster.getHealth() > 0) {
+            int damage = player.getAttack() - monster.getDefense();
+            if (damage > 0) {
+                monster.takeDamage(damage, logger);
+            }
+            else {
+                logger.log(player.getName() + " attacks " + monster.getName() + ", but it has no effect!");
             }
             if (monster.getHealth() <= 0) {
                 player.gainExperience(50, logger);
                 monsters.erase(monsters.begin());
+                return; 
             }
-        }
-        catch (const std::runtime_error& e) {
-            std::cout << "Combat ended: " << e.what() << "\n";
+            int monster_damage = monster.getAttack() - player.getDefense();
+            if (monster_damage > 0) {
+                player.takeDamage(monster_damage, logger);
+            }
+            else {
+                logger.log(monster.getName() + " attacks " + player.getName() + ", but it has no effect!");
+            }
             if (player.getHealth() <= 0) {
                 running = false;
+                return; 
             }
         }
     }
@@ -382,7 +387,7 @@ public:
                 else if (type == "Dragon") {
                     monsters.push_back(std::make_unique<Dragon>(name, health, attack, defense));
                 }
-                else if (type == "Skeleton") {
+                else if (type == "Zombie") {
                     monsters.push_back(std::make_unique<Zombie>(name, health, attack, defense));
                 }
                 else {
